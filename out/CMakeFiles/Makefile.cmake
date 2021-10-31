@@ -33,6 +33,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.0-rc2/CMakeRCCompiler.cmake"
   "CMakeFiles/3.22.0-rc2/CMakeSystem.cmake"
   "C:/Users/Cristian/Desktop/IEP/IEP_S6/src/CMakeLists.txt"
+  "C:/Users/Cristian/Desktop/IEP/IEP_S6/src/Corporation/CMakeLists.txt"
+  "C:/Users/Cristian/Desktop/IEP/IEP_S6/src/Processor/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -44,9 +46,13 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Corporation/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Processor/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/main.dir/DependInfo.cmake"
+  "CMakeFiles/IEP_S6.dir/DependInfo.cmake"
+  "Corporation/CMakeFiles/Corporation.dir/DependInfo.cmake"
+  "Processor/CMakeFiles/Processor.dir/DependInfo.cmake"
   )

@@ -62,42 +62,130 @@ CMAKE_BINARY_DIR = C:\Users\Cristian\Desktop\IEP\IEP_S6\out
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/main.dir/all
+all: CMakeFiles/IEP_S6.dir/all
+all: Corporation/all
+all: Processor/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: Corporation/preinstall
+preinstall: Processor/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/main.dir/clean
+clean: CMakeFiles/IEP_S6.dir/clean
+clean: Corporation/clean
+clean: Processor/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/main.dir
+# Directory level rules for directory Corporation
+
+# Recursive "all" directory target.
+Corporation/all: Corporation/CMakeFiles/Corporation.dir/all
+.PHONY : Corporation/all
+
+# Recursive "preinstall" directory target.
+Corporation/preinstall:
+.PHONY : Corporation/preinstall
+
+# Recursive "clean" directory target.
+Corporation/clean: Corporation/CMakeFiles/Corporation.dir/clean
+.PHONY : Corporation/clean
+
+#=============================================================================
+# Directory level rules for directory Processor
+
+# Recursive "all" directory target.
+Processor/all: Processor/CMakeFiles/Processor.dir/all
+.PHONY : Processor/all
+
+# Recursive "preinstall" directory target.
+Processor/preinstall:
+.PHONY : Processor/preinstall
+
+# Recursive "clean" directory target.
+Processor/clean: Processor/CMakeFiles/Processor.dir/clean
+.PHONY : Processor/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/IEP_S6.dir
 
 # All Build rule for target.
-CMakeFiles/main.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Cristian\Desktop\IEP\IEP_S6\out\CMakeFiles --progress-num=1,2 "Built target main"
-.PHONY : CMakeFiles/main.dir/all
+CMakeFiles/IEP_S6.dir/all: Corporation/CMakeFiles/Corporation.dir/all
+CMakeFiles/IEP_S6.dir/all: Processor/CMakeFiles/Processor.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IEP_S6.dir\build.make CMakeFiles/IEP_S6.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IEP_S6.dir\build.make CMakeFiles/IEP_S6.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Cristian\Desktop\IEP\IEP_S6\out\CMakeFiles --progress-num=3,4 "Built target IEP_S6"
+.PHONY : CMakeFiles/IEP_S6.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Cristian\Desktop\IEP\IEP_S6\out\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/main.dir/all
+CMakeFiles/IEP_S6.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Cristian\Desktop\IEP\IEP_S6\out\CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/IEP_S6.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Cristian\Desktop\IEP\IEP_S6\out\CMakeFiles 0
-.PHONY : CMakeFiles/main.dir/rule
+.PHONY : CMakeFiles/IEP_S6.dir/rule
 
 # Convenience name for target.
-main: CMakeFiles/main.dir/rule
-.PHONY : main
+IEP_S6: CMakeFiles/IEP_S6.dir/rule
+.PHONY : IEP_S6
 
 # clean rule for target.
-CMakeFiles/main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/clean
-.PHONY : CMakeFiles/main.dir/clean
+CMakeFiles/IEP_S6.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IEP_S6.dir\build.make CMakeFiles/IEP_S6.dir/clean
+.PHONY : CMakeFiles/IEP_S6.dir/clean
+
+#=============================================================================
+# Target rules for target Corporation/CMakeFiles/Corporation.dir
+
+# All Build rule for target.
+Corporation/CMakeFiles/Corporation.dir/all:
+	$(MAKE) $(MAKESILENT) -f Corporation\CMakeFiles\Corporation.dir\build.make Corporation/CMakeFiles/Corporation.dir/depend
+	$(MAKE) $(MAKESILENT) -f Corporation\CMakeFiles\Corporation.dir\build.make Corporation/CMakeFiles/Corporation.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Cristian\Desktop\IEP\IEP_S6\out\CMakeFiles --progress-num=1,2 "Built target Corporation"
+.PHONY : Corporation/CMakeFiles/Corporation.dir/all
+
+# Build rule for subdir invocation for target.
+Corporation/CMakeFiles/Corporation.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Cristian\Desktop\IEP\IEP_S6\out\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Corporation/CMakeFiles/Corporation.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Cristian\Desktop\IEP\IEP_S6\out\CMakeFiles 0
+.PHONY : Corporation/CMakeFiles/Corporation.dir/rule
+
+# Convenience name for target.
+Corporation: Corporation/CMakeFiles/Corporation.dir/rule
+.PHONY : Corporation
+
+# clean rule for target.
+Corporation/CMakeFiles/Corporation.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Corporation\CMakeFiles\Corporation.dir\build.make Corporation/CMakeFiles/Corporation.dir/clean
+.PHONY : Corporation/CMakeFiles/Corporation.dir/clean
+
+#=============================================================================
+# Target rules for target Processor/CMakeFiles/Processor.dir
+
+# All Build rule for target.
+Processor/CMakeFiles/Processor.dir/all:
+	$(MAKE) $(MAKESILENT) -f Processor\CMakeFiles\Processor.dir\build.make Processor/CMakeFiles/Processor.dir/depend
+	$(MAKE) $(MAKESILENT) -f Processor\CMakeFiles\Processor.dir\build.make Processor/CMakeFiles/Processor.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Cristian\Desktop\IEP\IEP_S6\out\CMakeFiles --progress-num=5,6 "Built target Processor"
+.PHONY : Processor/CMakeFiles/Processor.dir/all
+
+# Build rule for subdir invocation for target.
+Processor/CMakeFiles/Processor.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Cristian\Desktop\IEP\IEP_S6\out\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Processor/CMakeFiles/Processor.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Cristian\Desktop\IEP\IEP_S6\out\CMakeFiles 0
+.PHONY : Processor/CMakeFiles/Processor.dir/rule
+
+# Convenience name for target.
+Processor: Processor/CMakeFiles/Processor.dir/rule
+.PHONY : Processor
+
+# clean rule for target.
+Processor/CMakeFiles/Processor.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Processor\CMakeFiles\Processor.dir\build.make Processor/CMakeFiles/Processor.dir/clean
+.PHONY : Processor/CMakeFiles/Processor.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

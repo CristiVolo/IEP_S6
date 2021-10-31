@@ -1,4 +1,6 @@
 #include "Corporation.hpp"
+#include <iostream>
+
 
 Corporation::Corporation( 
     const std::string&      name,
@@ -11,3 +13,13 @@ Corporation::Corporation(
     mPrincipalIndustry_str ( principalIndustry ),
     mRevenue2020Bil_d      ( revenue2020Bil )
 {};
+
+std::string Corporation::get_Name()
+{
+    return mName_str;
+}
+
+void Corporation::display_Details()
+{
+    std::cout << "\nName -> " << mName_str << "\nHQ's country -> " << mCountryHQ_str;
+}
