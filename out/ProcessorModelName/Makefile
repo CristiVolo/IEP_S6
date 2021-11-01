@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Cristian\Desktop\IEP\IEP_S6\out\CMakeFiles C:\Users\Cristian\Desktop\IEP\IEP_S6\out\\CMakeFiles\progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
+	cd /d C:\Users\Cristian\Desktop\IEP\IEP_S6\out && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Cristian\Desktop\IEP\IEP_S6\out\CMakeFiles C:\Users\Cristian\Desktop\IEP\IEP_S6\out\ProcessorModelName\\CMakeFiles\progress.marks
+	cd /d C:\Users\Cristian\Desktop\IEP\IEP_S6\out && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ProcessorModelName/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Cristian\Desktop\IEP\IEP_S6\out\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 clean
+	cd /d C:\Users\Cristian\Desktop\IEP\IEP_S6\out && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ProcessorModelName/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,94 +102,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 preinstall
+	cd /d C:\Users\Cristian\Desktop\IEP\IEP_S6\out && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ProcessorModelName/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 preinstall
+	cd /d C:\Users\Cristian\Desktop\IEP\IEP_S6\out && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ProcessorModelName/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\Cristian\Desktop\IEP\IEP_S6\out && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named IEP_S6
+# Convenience name for target.
+ProcessorModelName/CMakeFiles/ProcessorModelName.dir/rule:
+	cd /d C:\Users\Cristian\Desktop\IEP\IEP_S6\out && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ProcessorModelName/CMakeFiles/ProcessorModelName.dir/rule
+.PHONY : ProcessorModelName/CMakeFiles/ProcessorModelName.dir/rule
 
-# Build rule for target.
-IEP_S6: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 IEP_S6
-.PHONY : IEP_S6
-
-# fast build rule for target.
-IEP_S6/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IEP_S6.dir\build.make CMakeFiles/IEP_S6.dir/build
-.PHONY : IEP_S6/fast
-
-#=============================================================================
-# Target rules for targets named Corporation
-
-# Build rule for target.
-Corporation: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Corporation
-.PHONY : Corporation
-
-# fast build rule for target.
-Corporation/fast:
-	$(MAKE) $(MAKESILENT) -f Corporation\CMakeFiles\Corporation.dir\build.make Corporation/CMakeFiles/Corporation.dir/build
-.PHONY : Corporation/fast
-
-#=============================================================================
-# Target rules for targets named Processor
-
-# Build rule for target.
-Processor: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Processor
-.PHONY : Processor
-
-# fast build rule for target.
-Processor/fast:
-	$(MAKE) $(MAKESILENT) -f Processor\CMakeFiles\Processor.dir\build.make Processor/CMakeFiles/Processor.dir/build
-.PHONY : Processor/fast
-
-#=============================================================================
-# Target rules for targets named ProcessorModelName
-
-# Build rule for target.
-ProcessorModelName: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ProcessorModelName
+# Convenience name for target.
+ProcessorModelName: ProcessorModelName/CMakeFiles/ProcessorModelName.dir/rule
 .PHONY : ProcessorModelName
 
 # fast build rule for target.
 ProcessorModelName/fast:
-	$(MAKE) $(MAKESILENT) -f ProcessorModelName\CMakeFiles\ProcessorModelName.dir\build.make ProcessorModelName/CMakeFiles/ProcessorModelName.dir/build
+	cd /d C:\Users\Cristian\Desktop\IEP\IEP_S6\out && $(MAKE) $(MAKESILENT) -f ProcessorModelName\CMakeFiles\ProcessorModelName.dir\build.make ProcessorModelName/CMakeFiles/ProcessorModelName.dir/build
 .PHONY : ProcessorModelName/fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+src/ProcessorModelName/ProcessorModelName.obj: src/ProcessorModelName/ProcessorModelName.cpp.obj
+.PHONY : src/ProcessorModelName/ProcessorModelName.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IEP_S6.dir\build.make CMakeFiles/IEP_S6.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+src/ProcessorModelName/ProcessorModelName.cpp.obj:
+	cd /d C:\Users\Cristian\Desktop\IEP\IEP_S6\out && $(MAKE) $(MAKESILENT) -f ProcessorModelName\CMakeFiles\ProcessorModelName.dir\build.make ProcessorModelName/CMakeFiles/ProcessorModelName.dir/src/ProcessorModelName/ProcessorModelName.cpp.obj
+.PHONY : src/ProcessorModelName/ProcessorModelName.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/ProcessorModelName/ProcessorModelName.i: src/ProcessorModelName/ProcessorModelName.cpp.i
+.PHONY : src/ProcessorModelName/ProcessorModelName.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IEP_S6.dir\build.make CMakeFiles/IEP_S6.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/ProcessorModelName/ProcessorModelName.cpp.i:
+	cd /d C:\Users\Cristian\Desktop\IEP\IEP_S6\out && $(MAKE) $(MAKESILENT) -f ProcessorModelName\CMakeFiles\ProcessorModelName.dir\build.make ProcessorModelName/CMakeFiles/ProcessorModelName.dir/src/ProcessorModelName/ProcessorModelName.cpp.i
+.PHONY : src/ProcessorModelName/ProcessorModelName.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/ProcessorModelName/ProcessorModelName.s: src/ProcessorModelName/ProcessorModelName.cpp.s
+.PHONY : src/ProcessorModelName/ProcessorModelName.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IEP_S6.dir\build.make CMakeFiles/IEP_S6.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/ProcessorModelName/ProcessorModelName.cpp.s:
+	cd /d C:\Users\Cristian\Desktop\IEP\IEP_S6\out && $(MAKE) $(MAKESILENT) -f ProcessorModelName\CMakeFiles\ProcessorModelName.dir\build.make ProcessorModelName/CMakeFiles/ProcessorModelName.dir/src/ProcessorModelName/ProcessorModelName.cpp.s
+.PHONY : src/ProcessorModelName/ProcessorModelName.cpp.s
 
 # Help Target
 help:
@@ -199,13 +161,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Corporation
-	@echo ... IEP_S6
-	@echo ... Processor
 	@echo ... ProcessorModelName
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... src/ProcessorModelName/ProcessorModelName.obj
+	@echo ... src/ProcessorModelName/ProcessorModelName.i
+	@echo ... src/ProcessorModelName/ProcessorModelName.s
 .PHONY : help
 
 
@@ -217,6 +176,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\Cristian\Desktop\IEP\IEP_S6\out && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

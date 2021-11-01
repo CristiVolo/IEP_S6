@@ -35,6 +35,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Users/Cristian/Desktop/IEP/IEP_S6/src/CMakeLists.txt"
   "C:/Users/Cristian/Desktop/IEP/IEP_S6/src/Corporation/CMakeLists.txt"
   "C:/Users/Cristian/Desktop/IEP/IEP_S6/src/Processor/CMakeLists.txt"
+  "C:/Users/Cristian/Desktop/IEP/IEP_S6/src/ProcessorModelName/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -48,6 +49,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "Corporation/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Processor/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "ProcessorModelName/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -55,4 +57,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/IEP_S6.dir/DependInfo.cmake"
   "Corporation/CMakeFiles/Corporation.dir/DependInfo.cmake"
   "Processor/CMakeFiles/Processor.dir/DependInfo.cmake"
+  "ProcessorModelName/CMakeFiles/ProcessorModelName.dir/DependInfo.cmake"
   )

@@ -94,6 +94,7 @@ IEP_S6.exe: CMakeFiles/IEP_S6.dir/main.cpp.obj
 IEP_S6.exe: CMakeFiles/IEP_S6.dir/build.make
 IEP_S6.exe: Corporation/libCorporation.a
 IEP_S6.exe: Processor/libProcessor.a
+IEP_S6.exe: ProcessorModelName/libProcessorModelName.a
 IEP_S6.exe: CMakeFiles/IEP_S6.dir/linklibs.rsp
 IEP_S6.exe: CMakeFiles/IEP_S6.dir/objects1.rsp
 IEP_S6.exe: CMakeFiles/IEP_S6.dir/link.txt
