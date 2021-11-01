@@ -16,12 +16,15 @@ public:
         const std::string&  countryHQ,
         const std::string&  principalIndustry,
         double              revenue2020Bil
-    );                                                       /** constructor              */
-    ~Corporation() = default;                                /** destructor               */
-    Corporation( const Corporation& corp_obj );              /** copy constructor         */
-    Corporation& operator=( const Corporation& corp_obj );   /** copy assignment operator */
-    std::string get_Name();                                  /** getter for Name          */
-    void display_Details();                                  /** print the members of a corp instance */
+    );                                                       /** constructor                           */
+    ~Corporation() = default;                                /** destructor                            */
+    Corporation( const Corporation& corp_obj );              /** copy constructor                      */
+    Corporation& operator=( const Corporation& corp_obj );   /** copy assignment operator              */
+    std::string get_Name() const;                                  /** getter for Name                       */
+    std::string get_CountryHQ() const;                             /** getter for CountryHQ                  */
+    std::string get_PrincipalIndustry() const;                     /** getter for PrincipalIndustry          */
+    double get_Revenue2020Bil() const;                             /** getter for Revenue2020Bil             */
+    void display_Details();                                  /** print the members of a corp instance  */
 };
 
 #endif
