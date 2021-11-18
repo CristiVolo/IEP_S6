@@ -8,7 +8,7 @@ class Processor
     std::string        mName_str;
     std::string        mBrand_str;
     double             mFreqGhz_d;
-    uint8_t            mNoCores_u8;
+    uint8_t            mNoCores_u8 = 2;
     uint8_t            mNoThreads_u8;
     double             mTurboBoostLimit_d;
     bool               mCooler_b;

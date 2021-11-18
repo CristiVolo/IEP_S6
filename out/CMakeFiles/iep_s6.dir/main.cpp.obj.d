@@ -127,4 +127,5 @@ CMakeFiles/IEP_S6.dir/main.cpp.obj: \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc \
  C:/Users/Cristian/Desktop/IEP/IEP_S6/src/Corporation/src/Corporation/Corporation.hpp \
- C:/Users/Cristian/Desktop/IEP/IEP_S6/src/Processor/src/Processor/Processor.hpp
+ C:/Users/Cristian/Desktop/IEP/IEP_S6/src/Processor/src/Processor/Processor.hpp \
+ C:/Users/Cristian/Desktop/IEP/IEP_S6/src/ProcessorModelName/src/ProcessorModelName/ProcessorModelName.hpp
