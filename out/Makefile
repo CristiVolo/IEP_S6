@@ -167,6 +167,19 @@ ProcessorModelName/fast:
 	$(MAKE) $(MAKESILENT) -f ProcessorModelName\CMakeFiles\ProcessorModelName.dir\build.make ProcessorModelName/CMakeFiles/ProcessorModelName.dir/build
 .PHONY : ProcessorModelName/fast
 
+#=============================================================================
+# Target rules for targets named HandCream
+
+# Build rule for target.
+HandCream: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 HandCream
+.PHONY : HandCream
+
+# fast build rule for target.
+HandCream/fast:
+	$(MAKE) $(MAKESILENT) -f HandCream\CMakeFiles\HandCream.dir\build.make HandCream/CMakeFiles/HandCream.dir/build
+.PHONY : HandCream/fast
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -200,6 +213,7 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Corporation
+	@echo ... HandCream
 	@echo ... IEP_S6
 	@echo ... Processor
 	@echo ... ProcessorModelName

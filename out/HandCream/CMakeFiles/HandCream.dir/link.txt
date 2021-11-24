@@ -1,0 +1,2 @@
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe qc libHandCream.a CMakeFiles/HandCream.dir/src/HandCream/HandCream.cpp.obj CMakeFiles/HandCream.dir/src/HandCream/UreaCream.cpp.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ranlib.exe libHandCream.a

@@ -5,22 +5,27 @@
 
 class HandCream
 {
-    std::string mName_str;
-    double      mPrice_dbl;
+    double      mPrice_dbl    = 10;
+    uint8_t     mQuantity_u8  = 100;
     
 public:
-    HandCream() = default;
+    std::string mName_str     = "Handsan";
+    
+    HandCream();
     HandCream(
-        const  std::string& name,
-        double price
+        const   std::string& name,
+        double  price,
+        uint8_t quantity
     );                                          /** constructor */
     HandCream( const HandCream& handCream_obj );                                   /** copy constructor                     */
     HandCream& operator=( const HandCream& handCream_obj );                        /** copy assignment operator             */
     ~HandCream() = default;                                                        /** destructor  */
     std::string get_Name() const;
-    int get_Price() const;
+    double get_Price() const;
+    uint8_t get_Quantity() const;
     void print_Name_n();                                                           /** print the name field, with new line character */
     void print_Price_n();
+    void print_Quantity_n();
 };
 
 #endif

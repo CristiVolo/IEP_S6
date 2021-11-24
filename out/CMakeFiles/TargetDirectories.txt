@@ -10,3 +10,6 @@ C:/Users/Cristian/Desktop/IEP/IEP_S6/out/Processor/CMakeFiles/rebuild_cache.dir
 C:/Users/Cristian/Desktop/IEP/IEP_S6/out/ProcessorModelName/CMakeFiles/ProcessorModelName.dir
 C:/Users/Cristian/Desktop/IEP/IEP_S6/out/ProcessorModelName/CMakeFiles/edit_cache.dir
 C:/Users/Cristian/Desktop/IEP/IEP_S6/out/ProcessorModelName/CMakeFiles/rebuild_cache.dir
+C:/Users/Cristian/Desktop/IEP/IEP_S6/out/HandCream/CMakeFiles/HandCream.dir
+C:/Users/Cristian/Desktop/IEP/IEP_S6/out/HandCream/CMakeFiles/edit_cache.dir
+C:/Users/Cristian/Desktop/IEP/IEP_S6/out/HandCream/CMakeFiles/rebuild_cache.dir

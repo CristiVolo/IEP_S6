@@ -3,6 +3,8 @@
 #include <Corporation/Corporation.hpp>
 #include <Processor/Processor.hpp>
 #include <ProcessorModelName/ProcessorModelName.hpp>
+#include <HandCream/HandCream.hpp>
+#include <HandCream/UreaCream.hpp>
 
 Corporation& ref_loc_stCorp()
 {
@@ -131,15 +133,12 @@ int main( void )
     std::cout << "d2.mName_str: ";
     d2.print_Name_n();
 
-    /*
-    Item 11: 
-        Handle assignment to self in operator=.
-    **********************************************************
-    **/
-    /*
-    Step 1:
-        
-    **/
+    // Item 12: a call to base class' operator inside derived class' operator  is required to update a field from superclass
+    UreaCream uc1_obj, uc2_obj;
+    uc1_obj.mName_str = "Coly";
+    uc2_obj = uc1_obj;
+
+    uc2_obj.print_Name_n();
 
     return 0;
 }

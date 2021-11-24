@@ -34,6 +34,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.0-rc2/CMakeSystem.cmake"
   "C:/Users/Cristian/Desktop/IEP/IEP_S6/src/CMakeLists.txt"
   "C:/Users/Cristian/Desktop/IEP/IEP_S6/src/Corporation/CMakeLists.txt"
+  "C:/Users/Cristian/Desktop/IEP/IEP_S6/src/HandCream/CMakeLists.txt"
   "C:/Users/Cristian/Desktop/IEP/IEP_S6/src/Processor/CMakeLists.txt"
   "C:/Users/Cristian/Desktop/IEP/IEP_S6/src/ProcessorModelName/CMakeLists.txt"
   )
@@ -50,6 +51,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "Corporation/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Processor/CMakeFiles/CMakeDirectoryInformation.cmake"
   "ProcessorModelName/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "HandCream/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -58,4 +60,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "Corporation/CMakeFiles/Corporation.dir/DependInfo.cmake"
   "Processor/CMakeFiles/Processor.dir/DependInfo.cmake"
   "ProcessorModelName/CMakeFiles/ProcessorModelName.dir/DependInfo.cmake"
+  "HandCream/CMakeFiles/HandCream.dir/DependInfo.cmake"
   )
