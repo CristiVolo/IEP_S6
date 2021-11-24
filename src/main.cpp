@@ -75,7 +75,7 @@ int main( void )
             is assigned to 'd0', completing the chain assignment.
         Print: string fields of the 3 new updated objects.
     **/
-    d0 = c0 = b0 = a;
+    d0 = c0 = (b0 = a);
 
     std::cout << "b0.mName_str: ";
     b0.print_Name_n();
