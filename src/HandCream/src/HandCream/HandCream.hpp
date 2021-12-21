@@ -7,9 +7,9 @@ class HandCream
 {
     double      mPrice_dbl    = 10;
     uint8_t     mQuantity_u8  = 100;
+    std::string mName_str     = "Handsan";
     
 public:
-    std::string mName_str     = "Handsan";
     
     HandCream();
     HandCream(

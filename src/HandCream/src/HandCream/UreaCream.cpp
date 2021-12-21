@@ -25,7 +25,7 @@ UreaCream& UreaCream::operator=( const UreaCream& ureaCream_obj )
 {
     if( this == &ureaCream_obj )
         return *this;
-    //HandCream::operator=(ureaCream_obj);
+    HandCream::operator=(ureaCream_obj);
     mUreaConcentration_u8 = ureaCream_obj.get_UreaConcentration();
     return *this;
 }
