@@ -6,16 +6,20 @@
 class ProcessorModelName
 {
     std::string mName_str;
-    
-    ProcessorModelName( const ProcessorModelName& procModelName_obj );             /** copy constructor                     */
+    bool mIsLocked_b;
     
 public:
-    ProcessorModelName() = default;
+    ProcessorModelName();
     ProcessorModelName( const std::string& name );                                 /** constructor */
+    ProcessorModelName( const ProcessorModelName& procModelName_obj );             /** copy constructor                     */
     ProcessorModelName& operator=( const ProcessorModelName& procModelName_obj );  /** copy assignment operator             */
     ~ProcessorModelName() = default;                                               /** destructor  */
     std::string get_Name() const;
+    bool get_LockStatus() const;
     void print_Name_n();                                                           /** print the name field, with new line character */
+    void print_LockStatus_n();   
+    void set_LockStatus(bool isLocked);
+    void ask_LockStatus();
 };
 
 #endif

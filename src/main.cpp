@@ -40,6 +40,29 @@ HandCream* create_handCreamInstance()
     return (new HandCream);
 }
 
+// Lock ProcessorModelNameResource
+void lock(ProcessorModelName &pmn)
+{
+    pmn.set_LockStatus(true);
+    std::cout << "Resource locked!\n";
+}
+
+// Unlock ProcessorModelNameResource
+void unlock(ProcessorModelName &pmn)
+{
+    pmn.set_LockStatus(false);
+    std::cout << "Resource unlocked!\n";
+}
+
+class LockResource
+{
+    ProcessorModelName &lockPtr;
+
+public:
+    LockResource(ProcessorModelName &ptr):lockPtr(ptr) { lock(lockPtr); }
+    ~LockResource() { unlock(lockPtr); }
+};
+
 int main( void )
 {
     // //ref_loc_stProc().display_Details();      //Brand does not display????
@@ -198,5 +221,14 @@ int main( void )
     std::cout << "hcObj7 count = " << hcObj7.use_count() << '\n';
     std::cout << "display name of obj 7\n";
     hcObj7->print_Name_n();
+    //_______________________________________________________________________________________________________________________________________________________________
+
+    // Item 14: Think carefully about copying behavior in resource-managing classes
+    // add lock bool field in ProcessorModelName class
+    ProcessorModelName pmnObj1("one");
+    LockResource *lrObj1 = new LockResource(pmnObj1);
+    pmnObj1.ask_LockStatus();
+    delete lrObj1;
+    pmnObj1.ask_LockStatus();
     return 0;
 }
