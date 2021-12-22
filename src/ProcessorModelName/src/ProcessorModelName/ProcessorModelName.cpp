@@ -1,7 +1,7 @@
 #include "ProcessorModelName.hpp"
 #include <iostream>
 
-ProcessorModelName::ProcessorModelName( const std::string& name ): mName_str( name ), mIsLocked_b( false ){};
+ProcessorModelName::ProcessorModelName( const std::string& name ): mName_str( name ){};
 
 ProcessorModelName::ProcessorModelName( const ProcessorModelName& procModelName_obj)
 {

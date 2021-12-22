@@ -6,7 +6,7 @@
 class ProcessorModelName
 {
     std::string mName_str;
-    bool mIsLocked_b;
+    bool mIsLocked_b = false;
     
 public:
     ProcessorModelName();
